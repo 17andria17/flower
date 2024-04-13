@@ -2,12 +2,12 @@ import Image from "next/image";
  import { FaAngleDown } from "react-icons/fa6";
 import 'animate.css';
 import FlowerList from "@/components/Product list";
-
+import FlowerCards from "@/components/flowers list";
    
 export default function Header () {
     return(
 <>
-<div className="h-screen   bg-cover bg-[url('img/flowwer.jpg')]">
+<div className="h-screen relative  bg-cover bg-[url('img/flowwer.jpg')]">
     <div className="bg-white pl-10 pt-3 border-b-2 w-90%">
       <p className="">Default welcome msg!</p>
       <div className="bg-gray-400"></div>
@@ -31,7 +31,11 @@ export default function Header () {
    </div>
   
    </div> <div></div>
+    <FlowerCards />
     <FlowerList/>
+    
    </>
     )
+    
+        
 }
